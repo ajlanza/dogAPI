@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>How many dogs?</title>
+</head>
+<body>
+    <main class="container">
+        <h1>How many dogs would you like to see?</h1>
+
+        <form class="dogForm">
+          <input type="range" min="1" max="50" value="3" class="dogSlider" id="dogs">
+          <p>Value: <span id="demo"></span></p>
+          <input type="submit" value="Get em!">
+        </form>
+        <p class="insertDogs hidden" id="insertDogs">
+          <!-- This is where we will display our dog images. -->
+        </p>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
