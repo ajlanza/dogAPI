@@ -22,6 +22,9 @@ function getDogImage(numberOfDogs) {
   }
 
 function showDogs(responseJson) {
+  // Clear any previous images that were loaded.
+  document.getElementById("insertDogs").innerHTML = "";
+  // Show our new dog images.
   responseJson.message.forEach(thisDog => {
    
     $("p.insertDogs").append(`<img src="${thisDog}">`);

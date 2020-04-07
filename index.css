@@ -18,3 +18,8 @@
   input[type=submit] {
       cursor: pointer;
   }
+
+  img{
+    max-width: 600%;
+    height: auto;
+  }
